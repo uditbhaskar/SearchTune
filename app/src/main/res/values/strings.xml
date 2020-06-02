@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Search Tune</string>
+    <string name="song_name">City name</string>
+    <string name="search">Search your tunes</string>
+    <string name="price">Price</string>
+    <string name="genre">Genre</string>
+    <string name="no_results">No Results</string>
+</resources>
