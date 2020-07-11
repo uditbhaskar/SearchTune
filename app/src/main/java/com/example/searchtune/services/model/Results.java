@@ -1,8 +1,6 @@
 package com.example.searchtune.services.model;
 
 
-import androidx.room.TypeConverter;
-
 public class Results {
 
 

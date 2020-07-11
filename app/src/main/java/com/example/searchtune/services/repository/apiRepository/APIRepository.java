@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData;
 
 import com.example.searchtune.services.model.Results;
 import com.example.searchtune.services.model.Root;
-import com.example.searchtune.services.repository.api.API;
+import com.example.searchtune.services.repository.apiInterface.API;
 import com.example.searchtune.services.repository.roomDatabase.RootDatabase;
 
 import java.util.List;

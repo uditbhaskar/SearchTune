@@ -12,14 +12,16 @@ public class TypeConverter {
 
     @androidx.room.TypeConverter
     public String getResultToString(List<Results> resultsList) {
-        String resultString = gson.toJson(resultsList);
+        String resultString;
+        resultString = gson.toJson(resultsList);
         return resultString;
     }
 
     @androidx.room.TypeConverter
     public List<Results> getStringToResult(String resultString){
         Type type = new TypeToken<List<Results>>(){}.getType();
-        List<Results> resultsList = gson.fromJson( resultString, type);
+        List<Results> resultsList;
+        resultsList = gson.fromJson( resultString, type);
         return resultsList;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.searchtune.services.repository.api;
+package com.example.searchtune.services.repository.apiInterface;
 
 import com.example.searchtune.services.model.Root;
 

@@ -3,7 +3,6 @@ package com.example.searchtune.view.ui;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,7 +13,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.searchtune.R;
 import com.example.searchtune.services.model.Root;
@@ -32,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     FrameLayout frameLayout_No_result;
     FrameLayout frameLayout_progress_bar;
     FrameLayout frameLayoutEmptyResult;
-    Boolean noDataInDB;
 
 
     @Override
@@ -49,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void displaySearchedItems(String searchQuery) {
-
 
         infoViewModel.setTunesInfo(searchQuery, MainActivity.this);
         infoViewModel.songsInfo.observe(this, new Observer<Root>() {

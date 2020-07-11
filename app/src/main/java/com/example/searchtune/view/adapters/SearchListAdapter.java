@@ -44,10 +44,10 @@ public class SearchListAdapter extends RecyclerView.Adapter<SearchListAdapter.Se
     public void onBindViewHolder(@NonNull SearchListHolder holder, int position) {
         Results results = resultsList.get(position);
         Glide.with(context).load(results.getArtworkUrl100()).into(holder.iv_albumArt);
-        holder.tv_artistName.setText("Artist: "+results.getArtistName());
-        holder.tv_price.setText("Price: $ "+String.valueOf(results.getTrackPrice()));
-        holder.tv_genre.setText("Genre: "+results.getPrimaryGenreName());
-        holder.tv_trackName.setText("Track: "+results.getTrackName());
+        holder.tv_artistName.setText(String.format("Artist: %s", results.getArtistName()));
+        holder.tv_price.setText(String.format("Price: $ %s", results.getTrackPrice()));
+        holder.tv_genre.setText(String.format("Genre: %s", results.getPrimaryGenreName()));
+        holder.tv_trackName.setText(String.format("Track: %s", results.getTrackName()));
     }
 
     @Override
